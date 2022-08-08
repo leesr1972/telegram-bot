@@ -5,15 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68e6229a-a553-4191-ad97-2e8e91f3cb25" name="Changes" comment="Комит к курсовой работе 6-го курса.">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/sky/telegrambot/model/Notification_Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/sky/telegrambot/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/sky/telegrambot/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/scripts/telegram.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df9d7a1f-02b8-43a0-ac73-20cdd5db6ce7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df9d7a1f-02b8-43a0-ac73-20cdd5db6ce7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df9d7a1f-02b8-43a0-ac73-20cdd5db6ce7/storage_v2/_src_/database/telegramDB.P7VSmA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df9d7a1f-02b8-43a0-ac73-20cdd5db6ce7/storage_v2/_src_/database/telegramDB.P7VSmA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/sky/telegrambot/listener/TelegramBotUpdatesListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pro/sky/telegrambot/listener/TelegramBotUpdatesListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/sky/telegrambot/listener/TelegramBotUpdatesListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pro/sky/telegrambot/listener/TelegramBotUpdatesListener.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,11 +67,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last.edited.regexp": "01.01.2022 20:00 Сделать домашнюю работу",
     "last_opened_file_path": "C:/Users/NbDell/IdeaProjects/telegram_bot/telegram-bot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "7b0ed8c8c9087e5bcaf8917932d6604c"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -79,7 +99,11 @@
       <option name="presentableId" value="Default" />
       <updated>1659184778437</updated>
       <workItem from="1659184779677" duration="161000" />
-      <workItem from="1659185058233" duration="5041000" />
+      <workItem from="1659185058233" duration="5322000" />
+      <workItem from="1659606600764" duration="66000" />
+      <workItem from="1659687875316" duration="9677000" />
+      <workItem from="1659792526019" duration="664000" />
+      <workItem from="1659947809107" duration="13329000" />
     </task>
     <task id="LOCAL-00001" summary="Комит к курсовой работе 6-го курса.">
       <created>1659185400152</created>
@@ -88,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659185400152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Комит к курсовой работе 6-го курса.">
+      <created>1659265788963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659265788963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
