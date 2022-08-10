@@ -28,6 +28,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
     @Autowired
     private TelegramBot telegramBot;
 
+    @Autowired
     private final NotificationService notificationService;
 
     public TelegramBotUpdatesListener(NotificationService notificationService) {
