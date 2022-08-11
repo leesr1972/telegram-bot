@@ -2,7 +2,7 @@ package pro.sky.telegrambot.service;
 
 import org.springframework.stereotype.Service;
 import pro.sky.telegrambot.repository.NotificationRepository;
-import pro.sky.telegrambot.model.Notification_Task;
+import pro.sky.telegrambot.model.NotificationTask;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -16,19 +16,19 @@ public class NotificationService {
         this.notificationRepository = notificationRepository;
     }
 
-    public void addNotification(Notification_Task notificationTask) {
+    public void addNotification(NotificationTask notificationTask) {
         notificationRepository.save(notificationTask);
     }
 
-    public Notification_Task getNotification(Long id) {
+    public NotificationTask getNotification(Long id) {
         return notificationRepository.getById(id);
     }
 
-    public void deleteNotification(Notification_Task notificationTask) {
+    public void deleteNotification(NotificationTask notificationTask) {
         notificationRepository.delete(notificationTask);
     }
 
-    public List<Notification_Task> findNotificationsForSend() {
+    public List<NotificationTask> findNotificationsForSend() {
         return notificationRepository.findNotificationTaskByDateTime(LocalDateTime.now().
                 truncatedTo(ChronoUnit.MINUTES));
     }

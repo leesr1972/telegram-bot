@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import pro.sky.telegrambot.model.Notification_Task;
+import pro.sky.telegrambot.model.NotificationTask;
 import pro.sky.telegrambot.service.NotificationService;
 
 import javax.annotation.PostConstruct;
@@ -58,7 +58,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                     String item = matcher.group(3);
                     LocalDateTime dateTime = LocalDateTime.parse(date, DateTimeFormatter.
                             ofPattern("dd.MM.yyyy HH:mm"));
-                    Notification_Task notificationTask = new Notification_Task();
+                    NotificationTask notificationTask = new NotificationTask();
                     notificationTask.setChat_id(chatId);
                     notificationTask.setNotification_text(item);
                     notificationTask.setDateTime(dateTime);
@@ -74,7 +74,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
 
     @Scheduled(fixedDelay = 60 * 1000)
     public void sendNotification() {
-        List<Notification_Task> notificationTasks = notificationService.findNotificationsForSend();
+        List<NotificationTask> notificationTasks = notificationService.findNotificationsForSend();
         notificationTasks.forEach(notification_task -> {
             telegramBot.execute(new SendMessage(notification_task.getChat_id(),
                     notification_task.getDateTime().toString() + " " +
